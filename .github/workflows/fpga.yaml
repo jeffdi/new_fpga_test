@@ -1,25 +1,6 @@
 name: fpga
 
-on:
-  push:
-    # Comment out (or remove) the following line to run the FPGA workflow on every push:
-    #branches: none
-  workflow_dispatch:
-  
-
-inputs:
-  tools-repo:
-    description: 'Override tt-support-tools repository'
-    default: 'TinyTapeout/tt-support-tools'
-    required: false
-    type: string
-  tools-ref:
-    description: 'Override tt-support-tools branch/tag/commit'
-    default: 'efabless'
-    required: false
-    type: string
-
-
+on:[push, workflow_dispatch]
 jobs:
   fpga:
     runs-on: ubuntu-24.04
@@ -32,9 +13,9 @@ jobs:
       - name: Checkout tt-support-tools repo
         uses: actions/checkout@v4
         with:
-          repository: "${{ inputs.tools-repo }}"
+          repository: psychogenic/tt-support-tools
           path: tt
-          ref: "${{ inputs.tools-ref }}"
+          ref: efabless
 
       - name: Setup python
         uses: actions/setup-python@v5
