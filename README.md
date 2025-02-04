@@ -43,11 +43,11 @@ The development boards will pop up the *FPGAUpdate* drive when they are plugged 
 
 These boards map well to Tiny Tapeout projects as they have:
 
-  * 8 inputs, connected to the piano switch on the left; 
+  * 8 inputs, connected to the piano switch on the left, which map to `ui_in[7:0]`; 
   
-  * 8 GPIO on PMOD1, similar to the bidirection PMOD on TT demoboards; and
+  * 8 GPIO on PMOD1, similar to the bidirection PMOD on TT demoboards `uio_in/uio_out[7:0]`; and
   
-  * 8 output IO, which go both to the 7-segment display and to PMOD2
+  * 8 output IO, which go both to the 7-segment display and to PMOD2, which are the `uo_out[7:0]`
 
 ### Clocking
 
