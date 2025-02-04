@@ -35,6 +35,27 @@ Once the run is complete, click on the action and you'll find an `fpga_bitstream
 
 Grab that, unzip it, and within you'll find the `tt_fpga.uf2` file.  Copy that UF2 to the **FPGAUPDATE** drive.  The project should start running a few seconds later.
 
+## FPGA dev board
+
+The development boards will pop up the *FPGAUpdate* drive when they are plugged into USB.
+
+![fpga dev board](images/fpga_board.jpg)
+
+These boards map well to Tiny Tapeout projects as they have:
+
+  * 8 inputs, connected to the piano switch on the left; 
+  
+  * 8 GPIO on PMOD1, similar to the bidirection PMOD on TT demoboards; and
+  
+  * 8 output IO, which go both to the 7-segment display and to PMOD2
+
+### Clocking
+
+The project will, by default, be clocked at the rate you specified in the info.yaml (or as close as possible to that rate).  To enable single stepping ("manual" clocking), hold the switch on the top right (next to the USB port) and keep it held as you plug into USB.
+
+Once it's powered-up, you may release the switch and then every press will clock the project once.
+
+
 
 
 ## What is Tiny Tapeout?
