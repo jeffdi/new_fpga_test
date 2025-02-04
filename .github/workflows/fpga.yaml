@@ -1,6 +1,6 @@
 name: fpga
 
-on:[push, workflow_dispatch]
+on: [push, workflow_dispatch]
 jobs:
   fpga:
     runs-on: ubuntu-24.04
