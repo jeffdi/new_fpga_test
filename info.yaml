@@ -4,7 +4,7 @@ project:
   title:        "Hello World"      # Project title
   author:       "Jeff DiCorpo"      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "" # One line description of what your project does
+  description:  "Prints Hello World on LED" # One line description of what your project does
   language:     "Wokwi" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     10        # Clock frequency in Hz (or 0 if not applicable)
 
