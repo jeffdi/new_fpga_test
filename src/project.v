@@ -33,8 +33,9 @@ module tt_um_example #( parameter MAX_COUNT = 24'd10_000_000 ) (
 
     // if external inputs are set then use that as compare count
     // otherwise use the hard coded MAX_COUNT
-    wire [23:0] compare = ui_in == 0 ? MAX_COUNT: {6'b0, ui_in[7:0], 10'b0};
-
+    // wire [23:0] compare = ui_in == 0 ? MAX_COUNT: {6'b0, ui_in[7:0], 10'b0};
+    wire [23:0] compare = 24'd10;
+	
     always @(posedge clk) begin
         // if reset, set counter to 0
         if (reset) begin
