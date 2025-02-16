@@ -1,10 +1,11 @@
 # Tiny Tapeout project information
 project:
-  title:        "Simple counter/loopback test"      # Project title
-  author:       "Pat Deegan"      # Your name
-  discord:      "psychogenic"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "Will output counter on pmods or mirror pmod 1 on pmod 2 if ui_in[0] is HIGH" # One line description of what your project does
-  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  wokwi_id:    393665223636645889
+  title:        "Hello World"      # Project title
+  author:       "Jeff DiCorpo"      # Your name
+  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "" # One line description of what your project does
+  language:     "Wokwi" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     10        # Clock frequency in Hz (or 0 if not applicable)
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.
