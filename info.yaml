@@ -23,11 +23,11 @@ project:
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
   # Inputs
-  ui[0]: "loopback"
-  ui[1]: ""
-  ui[2]: ""
-  ui[3]: ""
-  ui[4]: ""
+  ui[0]: "in/floor0"
+  ui[1]: "in/floor1"
+  ui[2]: "in/floor2"
+  ui[3]: "in/floor3"
+  ui[4]: "in/floor4"
   ui[5]: ""
   ui[6]: ""
   ui[7]: ""
